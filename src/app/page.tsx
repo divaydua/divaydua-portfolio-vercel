@@ -18,26 +18,34 @@ export default function Home() {
   const router = useRouter();
   const [aboutModalOpen, setAboutModalOpen] = useState(false);
   const [name, setName] = useState("Divay Dua");
-  const [bio, setBio] = useState("I'm a software engineer with a love for building beautiful, functional, and impactful digital experiences. My journey spans web development, UI/UX design, and creative coding. I thrive on solving problems and bringing ideas to life.");
+  const [bio, setBio] = useState("Java Backend Developer with 3.5 years of experience building scalable, event-driven microservices using Java, Spring Boot, Kafka, and Docker. Proven track record in backend design, API development, and production support. Comfortable taking end-to-end ownership of features and collaborating with cross-functional teams in agile environments.");
   const [avatarUrl, setAvatarUrl] = useState("/profile-placeholder.png");
 
   // Projects state
   const [projects, setProjects] = useState([
     {
       id: 1,
-      name: "Project 1",
-      description: "Description for Project 1",
-      url: "https://example.com/project1",
+      name: "SwiftRide - Spring Boot Uber Clone",
+      description: "• Designed and implemented modular, event-driven backend services for a ride-sharing platform using Java, Spring Boot, and Kafka. • Developed scalable microservices with PostGIS geospatial support, JWT authentication, and Strategy pattern implementation for driver matching and payment processing.",
+      url: "https://github.com/divaydua/SwiftRide",
       imageUrl: "/project-placeholder.png",
-      techStack: "React, Node.js, MongoDB",
+      techStack: "Java, Spring Boot, PostgreSQL, PostGIS, JWT, Kafka, Docker",
     },
     {
       id: 2,
-      name: "Project 2",
-      description: "Description for Project 2",
-      url: "https://example.com/project2",
+      name: "SocialConnect Spring Boot Microservices Project",
+      description: "• Designed and implemented modular, event-driven backend services for a LinkedIn-style ERP platform using Java, Spring Boot, and Kafka. • Developed scalable microservices with Redis caching, integrated API Gateway, and built observability features to ensure performance and traceability across distributed components.",
+      url: "#",
       imageUrl: "/project-placeholder.png",
-      techStack: "Next.js, Tailwind CSS",
+      techStack: "Java, Spring Boot, Kafka, Redis, API Gateway",
+    },
+    {
+      id: 3,
+      name: "GPT for Access to Justice",
+      description: "• Developed smart legal forms with Docassemble and OpenAI • Enabled NLP-based voice input, Google Maps integration, and ML-driven intent detection",
+      url: "#",
+      imageUrl: "/project-placeholder.png",
+      techStack: "Python, Docassemble, OpenAI, Google Maps, Machine Learning",
     },
   ]);
 
@@ -454,7 +462,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto py-20 px-6 gap-12 md:gap-0">
         <div className="flex-1 text-center md:text-left">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-blue-700 leading-tight">Hi, I'm Divay Dua</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-blue-700 leading-tight">Hi, I&apos;m Divay Dua</h2>
           <p className="text-xl md:text-2xl mb-6 text-slate-700 max-w-xl">A passionate developer, creator, and innovator. Welcome to my portfolio!</p>
           <a href="#projects" className="inline-block px-8 py-3 bg-blue-600 text-white rounded-full text-lg font-semibold shadow hover:bg-teal-500 transition">See My Work</a>
         </div>
